@@ -22,7 +22,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     id="technology.kulak.cordova.appopen"
-    version="0.1">
+    version="0.1.0">
     <name>Open Application</name>
     <description>Cordova External Application Open Plugin</description>
     <license>Apache 2.0</license>
