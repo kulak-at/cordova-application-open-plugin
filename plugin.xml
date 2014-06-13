@@ -31,11 +31,17 @@
     <issue>https://github.com/kulak-at/cordova-application-open-plugin/issues</issue>
 
     <js-module src="www/OpenApplication.js" name="OpenApplication">
-        <clobbers target="OpenApplication" />
+        <clobbers target="window.OpenApplication" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="OpenApplication">
+                <param name="android-package" value="technology.kulak.cordova.appopen.OpenApplication"/>
+            </feature>
+        </config-file>
 
         <source-file src="src/android/OpenApplication.java" target-dir="src/technology/kulak/cordova/appopen" />
 
