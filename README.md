@@ -10,6 +10,14 @@ Usage is easy as a pie:
 window.OpenApplication("com.google.android.gm"); // opens stock Gmail app.
 ```
 
+No that this should be called after *deviceready* is fired, for example:
+```javascript
+var openFn = function() {
+   window.OpenApplication(app_package);
+};
+document.addEventListener('deviceready', openFn, false);
+```
+
 ### Instalation
 ```
 cordova plugin add https://github.com/kulak-at/cordova-application-open-plugin.git
